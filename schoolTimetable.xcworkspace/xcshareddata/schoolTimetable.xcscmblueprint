@@ -1,0 +1,43 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4EAA53E8BE8D3BC28CB95BBA842DEEDAAF30079D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "992b733b-5975-f14d-ab07-ba893b7f38c1++505" : {
+
+    },
+    "23f9e9bb-2ff9-5740-b867-825e571de4ae++505" : {
+      "DVTSourceControlWorkingCopyRepositoryBranchesLocationKey" : "branches",
+      "DVTSourceControlWorkingCopyRepositoryPrimaryBranchLocationKey" : "trunk"
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "992b733b-5975-f14d-ab07-ba893b7f38c1++505" : 0,
+    "23f9e9bb-2ff9-5740-b867-825e571de4ae++505" : 0,
+    "4EAA53E8BE8D3BC28CB95BBA842DEEDAAF30079D" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "CF0891B2-E88F-48F7-9832-D4EF1B1F95E1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "992b733b-5975-f14d-ab07-ba893b7f38c1++505" : "ICSLA\/",
+    "23f9e9bb-2ff9-5740-b867-825e571de4ae++505" : "schoolTimetable\/mobile112_iOS\/",
+    "4EAA53E8BE8D3BC28CB95BBA842DEEDAAF30079D" : "schoolTimetable\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "schoolTimetable",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "schoolTimetable.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/202.96.122.93:8443\/svn\/mobile112_iOS",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "23f9e9bb-2ff9-5740-b867-825e571de4ae++505"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/rockgarden\/schoolTimetable.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4EAA53E8BE8D3BC28CB95BBA842DEEDAAF30079D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/202.96.122.93:8443\/svn\/ICSLA_iOS",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "992b733b-5975-f14d-ab07-ba893b7f38c1++505"
+    }
+  ]
+}
