@@ -8,6 +8,8 @@
 
 import UIKit
 
+let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+
 class LaunchVC: UIViewController {
     
     override func viewDidLoad() {
@@ -17,7 +19,7 @@ class LaunchVC: UIViewController {
         let item2 = ParallaxItem(image: UIImage(named: "item2")!, text: "FOLLOW WORLD CLASS PHOTOGRAPHERS")
         let item3 = ParallaxItem(image: UIImage(named: "item3")!, text: "EXPLORE OUR COLLECTION BY CATEGORY")
         
-        let mParallaxViewController = RMParallax(items: [item1, item2, item3], motion: false)
+        let mParallaxViewController = Parallax(items: [item1, item2, item3], motion: false)
         mParallaxViewController.completionHandler = {
             UIView.animateWithDuration(0.4, animations: { () -> Void in
                 mParallaxViewController.view.alpha = 0.0
@@ -28,6 +30,10 @@ class LaunchVC: UIViewController {
         self.addChildViewController(mParallaxViewController)
         self.view.addSubview(mParallaxViewController.view)
         mParallaxViewController.didMoveToParentViewController(self)
+
+        // TODO:跳转
+        UserDefault.instance.setIsFirstRunApp(false)
+
     }
     
     override func prefersStatusBarHidden() -> Bool {

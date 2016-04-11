@@ -8,19 +8,26 @@
 
 import UIKit
 
+public let serviceUrl = PlistUtil.getAppDefaultDictionary("ServiceUrl") as! String
+public let appID = PlistUtil.getAppDefaultDictionary("appID") as! String
+public let appName = PlistUtil.getAppDefaultDictionary("appName") as! String
+public var appVersion = NSBundle.mainBundle().objectForInfoDictionaryKey(kCFBundleVersionKey as String) as! String!
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        
-        // Override point for customization after application launch.
-        let splitViewController = self.window!.rootViewController as! UISplitViewController
-        let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
-        navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem()
-        splitViewController.delegate = self
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        self.window!.makeKeyAndVisible()
+
+        // 设定启动界面展示时间
+        NSThread.sleepForTimeInterval(0.0)
+
+        // 设定根视图控制器
+        setRootViewCotnroller()
+
         return true
     }
 
@@ -46,6 +53,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    // MARK: - Private mothod
+
+    /**
+     动态加载rootViewController
+     */
+    func setRootViewCotnroller() {
+        setRootViewCotnroller(UserDefault.instance.isFirstRunApp())
+    }
+
+    func setRootViewCotnroller(flag : Bool){
+        let launchVC = UIStoryboard.getViewControllerFromStoryboard("launchVC", storyboard: "Launch") as! LaunchVC
+        self.window?.rootViewController = launchVC
+        if !flag {
+            let splitVC = UIStoryboard.getViewControllerFromStoryboard("splitVC", storyboard: "Main") as! UISplitViewController
+            self.window!.rootViewController = splitVC
+            let navigationController = splitVC.viewControllers[splitVC.viewControllers.count-1] as! UINavigationController
+            navigationController.topViewController!.navigationItem.leftBarButtonItem = splitVC.displayModeButtonItem()
+            splitVC.delegate = self
+        }
+    }
+
     // MARK: - Split view
 
     func splitViewController(splitViewController: UISplitViewController, collapseSecondaryViewController secondaryViewController:UIViewController, ontoPrimaryViewController primaryViewController:UIViewController) -> Bool {
@@ -57,6 +85,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         }
         return false
     }
-
+    
 }
 
