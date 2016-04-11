@@ -15,6 +15,14 @@
 		573FC81D1C76E5E7000F1F87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 573FC81B1C76E5E7000F1F87 /* LaunchScreen.storyboard */; };
 		573FC8281C76E5E8000F1F87 /* mylessonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573FC8271C76E5E8000F1F87 /* mylessonTests.swift */; };
 		573FC8331C76E5E8000F1F87 /* mylessonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573FC8321C76E5E8000F1F87 /* mylessonUITests.swift */; };
+		C27AF0761CBB71CD007ACEE4 /* ParallaxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27AF0751CBB71CD007ACEE4 /* ParallaxViewController.swift */; };
+		C27AF0781CBB738E007ACEE4 /* LaunchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27AF0771CBB738E007ACEE4 /* LaunchVC.swift */; };
+		C27AF07B1CBB84CD007ACEE4 /* Extensions in Resources */ = {isa = PBXBuildFile; fileRef = C27AF07A1CBB84CD007ACEE4 /* Extensions */; };
+		C27AF0831CBB886F007ACEE4 /* Ext_UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27AF07E1CBB886F007ACEE4 /* Ext_UI.swift */; };
+		C27AF0841CBB886F007ACEE4 /* Ext_UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27AF07F1CBB886F007ACEE4 /* Ext_UIColor.swift */; };
+		C27AF0851CBB886F007ACEE4 /* Ext_UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27AF0801CBB886F007ACEE4 /* Ext_UIStoryboard.swift */; };
+		C27AF0861CBB886F007ACEE4 /* Ext_UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27AF0811CBB886F007ACEE4 /* Ext_UIView.swift */; };
+		C27AF08A1CBB8EE0007ACEE4 /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C27AF0891CBB8EDF007ACEE4 /* Launch.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		573FC82E1C76E5E8000F1F87 /* mylessonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mylessonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		573FC8321C76E5E8000F1F87 /* mylessonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mylessonUITests.swift; sourceTree = "<group>"; };
 		573FC8341C76E5E8000F1F87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C27AF0751CBB71CD007ACEE4 /* ParallaxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxViewController.swift; sourceTree = "<group>"; };
+		C27AF0771CBB738E007ACEE4 /* LaunchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchVC.swift; sourceTree = "<group>"; };
+		C27AF07A1CBB84CD007ACEE4 /* Extensions */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Extensions; path = /Users/wangkan/Documents/schoolTimetable/mylesson/mylesson/Extensions; sourceTree = "<absolute>"; };
+		C27AF07E1CBB886F007ACEE4 /* Ext_UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ext_UI.swift; path = Extensions/Ext_UI.swift; sourceTree = "<group>"; };
+		C27AF07F1CBB886F007ACEE4 /* Ext_UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ext_UIColor.swift; path = Extensions/Ext_UIColor.swift; sourceTree = "<group>"; };
+		C27AF0801CBB886F007ACEE4 /* Ext_UIStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ext_UIStoryboard.swift; path = Extensions/Ext_UIStoryboard.swift; sourceTree = "<group>"; };
+		C27AF0811CBB886F007ACEE4 /* Ext_UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ext_UIView.swift; path = Extensions/Ext_UIView.swift; sourceTree = "<group>"; };
+		C27AF0891CBB8EDF007ACEE4 /* Launch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				573FC80F1C76E5E7000F1F87 /* mylesson */,
+				C27AF0741CBB7121007ACEE4 /* Common */,
 				573FC8261C76E5E8000F1F87 /* mylessonTests */,
 				573FC8311C76E5E8000F1F87 /* mylessonUITests */,
 				573FC80E1C76E5E7000F1F87 /* Products */,
@@ -104,8 +121,10 @@
 				573FC8141C76E5E7000F1F87 /* DetailViewController.swift */,
 				573FC8161C76E5E7000F1F87 /* Main.storyboard */,
 				573FC8191C76E5E7000F1F87 /* Assets.xcassets */,
+				C27AF0891CBB8EDF007ACEE4 /* Launch.storyboard */,
 				573FC81B1C76E5E7000F1F87 /* LaunchScreen.storyboard */,
 				573FC81E1C76E5E7000F1F87 /* Info.plist */,
+				C27AF0771CBB738E007ACEE4 /* LaunchVC.swift */,
 			);
 			path = mylesson;
 			sourceTree = "<group>";
@@ -126,6 +145,27 @@
 				573FC8341C76E5E8000F1F87 /* Info.plist */,
 			);
 			path = mylessonUITests;
+			sourceTree = "<group>";
+		};
+		C27AF0741CBB7121007ACEE4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C27AF0881CBB8893007ACEE4 /* Extensions */,
+				C27AF0751CBB71CD007ACEE4 /* ParallaxViewController.swift */,
+			);
+			name = Common;
+			path = mylesson;
+			sourceTree = "<group>";
+		};
+		C27AF0881CBB8893007ACEE4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C27AF07E1CBB886F007ACEE4 /* Ext_UI.swift */,
+				C27AF07F1CBB886F007ACEE4 /* Ext_UIColor.swift */,
+				C27AF0801CBB886F007ACEE4 /* Ext_UIStoryboard.swift */,
+				C27AF0811CBB886F007ACEE4 /* Ext_UIView.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +276,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				573FC81D1C76E5E7000F1F87 /* LaunchScreen.storyboard in Resources */,
+				C27AF08A1CBB8EE0007ACEE4 /* Launch.storyboard in Resources */,
 				573FC81A1C76E5E7000F1F87 /* Assets.xcassets in Resources */,
+				C27AF07B1CBB84CD007ACEE4 /* Extensions in Resources */,
 				573FC8181C76E5E7000F1F87 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,9 +304,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C27AF0861CBB886F007ACEE4 /* Ext_UIView.swift in Sources */,
+				C27AF0831CBB886F007ACEE4 /* Ext_UI.swift in Sources */,
+				C27AF0841CBB886F007ACEE4 /* Ext_UIColor.swift in Sources */,
+				C27AF0781CBB738E007ACEE4 /* LaunchVC.swift in Sources */,
 				573FC8151C76E5E7000F1F87 /* DetailViewController.swift in Sources */,
+				C27AF0851CBB886F007ACEE4 /* Ext_UIStoryboard.swift in Sources */,
 				573FC8131C76E5E7000F1F87 /* MasterViewController.swift in Sources */,
 				573FC8111C76E5E7000F1F87 /* AppDelegate.swift in Sources */,
+				C27AF0761CBB71CD007ACEE4 /* ParallaxViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,7 +456,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = mylesson/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rockgarden.mylesson;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -421,7 +469,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = mylesson/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rockgarden.mylesson;
 				PRODUCT_NAME = "$(TARGET_NAME)";
