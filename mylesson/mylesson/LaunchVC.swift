@@ -21,18 +21,18 @@ class LaunchVC: UIViewController {
         
         let mParallaxViewController = Parallax(items: [item1, item2, item3], motion: false)
         mParallaxViewController.completionHandler = {
-            UIView.animateWithDuration(0.4, animations: { () -> Void in
+            UIView.animateWithDuration(1, animations: { () -> Void in
                 mParallaxViewController.view.alpha = 0.0
+                // 设置首次启动为false,并跳转到主页
+                UserDefault.instance.setIsFirstRunApp(false)
+                appDelegate.setRootViewCotnroller(false)
             })
         }
-        
+
         // Adding parallax view controller.
         self.addChildViewController(mParallaxViewController)
         self.view.addSubview(mParallaxViewController.view)
         mParallaxViewController.didMoveToParentViewController(self)
-
-        // TODO:跳转
-        UserDefault.instance.setIsFirstRunApp(false)
 
     }
     

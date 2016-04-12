@@ -8,6 +8,7 @@
 
 /**
  *  Completion handler for dismissal of the parallax view.
+ *  通过typealias定义的protocol,无参数无返回的回调方法
  */
 typealias ParallaxCompletionHandler = () -> Void
 
