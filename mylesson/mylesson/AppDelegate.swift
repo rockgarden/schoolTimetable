@@ -53,6 +53,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+
     // MARK: - Private mothod
 
     /**
@@ -62,6 +63,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         setRootViewCotnroller(UserDefault.instance.isFirstRunApp())
     }
 
+    /**
+     设定rootViewController
+     - parameter flag: 是否首次启动
+     */
     func setRootViewCotnroller(flag : Bool){
         let launchVC = UIStoryboard.getViewControllerFromStoryboard("launchVC", storyboard: "Launch") as! LaunchVC
         self.window?.rootViewController = launchVC
